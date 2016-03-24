@@ -32,7 +32,7 @@ snortForm = ("\n\n---------------------------Snort Rule Structure---------------
              "1. Rule Action\n"
              "2. Protocol - UDP, ICMP, TCP, IP\n"
              "3. Source IP address/range\n"
-             "4. Source Ports\n"
+             "4. Source 
              "5. Destination IP address/range\n"
              "6. Destination Port\n" 
              "7. Rule Options Wizard\n"
@@ -671,7 +671,7 @@ def contentRE():
                         offset = int(input(clear+'Enter in the offset (bytes) into the payload to start the content match\n: '))
                     except:
                         continue
-                    offset = ' offest:'+ str(offset)+';'
+                    offset = ' offset:'+ str(offset)+';'
                     break
                 elif options == '2':
                     try:
@@ -686,7 +686,7 @@ def contentRE():
                         depth = int(input(clear+'Enter a number for the bytes into the payload to search within\n: '))
                     except:
                         continue
-                    offset = ' offest:'+ str(offset)+';'
+                    offset = ' offset:'+ str(offset)+';'
                     depth = ' depth:' + str(depth)+ ';'
                     break
                 elif options.upper() == 'N':
