@@ -32,7 +32,7 @@ snortForm = ("\n\n---------------------------Snort Rule Structure---------------
              "1. Rule Action\n"
              "2. Protocol - UDP, ICMP, TCP, IP\n"
              "3. Source IP address/range\n"
-             "4. Source 
+             "4. Source\n"
              "5. Destination IP address/range\n"
              "6. Destination Port\n" 
              "7. Rule Options Wizard\n"
