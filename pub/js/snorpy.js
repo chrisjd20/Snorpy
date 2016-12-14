@@ -124,7 +124,7 @@ $("#dstip").focusout(function(){
 $("#srcport").focusout(function(){
     if ($("#srcport").val() == "") {
         //do nothing
-    } else if ($("#srcport").val().match(/^(?:\$|\!|\(|\d){1}(?:\,|\$|\w|\_|\-|\d|\s|\!|\s)+\)?$/g) !== null || $("#srcport").val() === '' || $("#srcport").val() === 'any'){
+    } else if ($("#srcport").val().match(/^(?:\$|\!|\(|\d){1}(?:\,|\$|\w|\_|\-|\d|\s|\!|\s)*\)?$/g) !== null || $("#srcport").val() === '' || $("#srcport").val() === 'any'){
         if (parseInt($("#srcport").val()) < 65535 && parseInt($("#srcport").val()) > 1) {
             $("#opsrcport").text($("#srcport").val());   
         } else {
@@ -142,7 +142,7 @@ $("#srcport").focusout(function(){
 $("#dstport").focusout(function(){
     if ($("#dstport").val() === '') {
         //do nothin
-    } else if ($("#dstport").val().match(/^(?:\$|\!|\(|\d){1}(?:\,|\$|\w|\_|\-|\d|\s|\!|\s)+\)?$/g) !== null || $("#dstport").val() === '' || $("#dstport").val() === 'any'){
+    } else if ($("#dstport").val().match(/^(?:\$|\!|\(|\d){1}(?:\,|\$|\w|\_|\-|\d|\s|\!|\s)*\)?$/g) !== null || $("#dstport").val() === '' || $("#dstport").val() === 'any'){
         if (parseInt($("#dstport").val()) < 65535 && parseInt($("#dstport").val()) > 1) {
             $("#opdstport").text($("#dstport").val());
         } else {
