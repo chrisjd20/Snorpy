@@ -1,0 +1,337 @@
+/* ---- reset ---- */
+
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+  text-align: center;
+  color:#888888;
+  font-family: Helvetica;
+}
+
+#particles-js {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+#miscOptions{
+    position: absolute;
+    width: 95%;
+    left: 2.5%;
+    bottom: 2%;
+}
+#globalcontainer {
+    position: relative;
+    min-width: 1050px; 
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-2%);
+    -o-transform: translateY(-50%);
+}
+#GlobalResults {
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: none;
+    top: 79%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+#innerRuleOutput {
+    position: absolute;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 16px;
+    border:1px solid #aaa;
+    width: 95%;
+    top: 50%;
+    overflow-y: auto;
+    color: black;
+    left: 2.5%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    height: 80%;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* ---- stats.js ---- */
+.SNORPY {
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+hr.style1{
+	border-top: 1px solid rgba(140, 139, 139, 0.7);
+    width: 95%;
+    top: 47.5%;
+    left: 2.5%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    position: absolute;
+
+}
+.check {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 66px;
+}
+.check2 {
+    width: 20px;
+    height: 20px;
+}
+.contentpluses {
+    position: absolute;
+    left: 235px;
+    top: 70px;
+}
+.contentpluses:focus {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#thecontent{
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    width: 90%;
+}
+#theregex{
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    width: 90%;
+}
+#theoffset {
+    position: absolute;
+    left: 5%;
+    top: 65px;
+}
+#thedepth {
+    position: absolute;
+    left: 31.5%;
+    top: 65px;
+}
+.contentHeaders {
+    position: absolute;
+    left: -50px;
+    right: 0;
+    top: -40px;
+}
+.plusexplode {
+    z-index: 2;
+}
+#pcrediv text {
+    font-size: 12px;
+}
+#contentdiv{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 40%;
+    border-radius: 4px;
+    top: 5%;
+    width: 95%;
+    left: 2.5%;
+    border:1px solid #aaa;
+}
+#pcrediv{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 95%;
+    height: 40%;
+    border-radius: 4px;
+    top: 55%;
+    left: 2.5%;
+    border:1px solid #aaa;
+}
+#rightarrow {
+    color: black;
+    font-size: 27px;
+}
+#headermessage{
+    width: 610px;
+}
+#headerInner1{
+    position: absolute;
+    top:12%;
+    left:0;
+    width: 100%;
+}
+#headerInner2{
+    position: absolute;
+    top:55%;
+    left:0;
+    width: 100%;
+}
+input {
+    width: 120px;
+    border-radius: 3px;
+    height: 30px;
+    font-size: 14px;
+    color: #595959;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+input:focus { 
+    outline:none;
+    color: black;
+    border-color:#9ecaed;
+    box-shadow:0 0 10px #9ecaed;
+    background-color: rgba(255, 255, 255, 1);
+}
+select {
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    color: #595959;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+select:focus { 
+    outline:none;
+    color: black;
+    border-color:#9ecaed;
+    box-shadow:0 0 10px #9ecaed;
+    background-color: rgba(255, 255, 255, 1);
+}
+.mainsquares {
+    background-color: rgba(0, 82, 204, 0.06);
+    border-radius: 3px;
+    border:1px solid #aaa;
+    clear:left;
+    text-shadow: none;
+}
+.rulebody
+{
+    position: relative;
+    margin: auto;
+    top: 0px;
+    right: 0;
+    line-height: 10%;
+    left: 0;
+    width: 1005px;
+    height: 100px;
+}
+
+.selectedProtoOptions{
+    position: absolute;
+    left: 8.5%;
+    width: 82%;
+    height: 40%;
+    top: 4.5%;
+    font-size: 12;
+}
+.rulebody + .protoOptions + .contentMatch { 
+    margin-top: 4px; 
+}
+.protoOptions
+{
+    position: relative;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+    line-height: 10%;
+    left: 0;
+    width: 500px;
+    height: 350px;
+}
+.contentMatch
+{
+    white-space: nowrap;
+    position: relative;
+    margin: auto;
+    top: 0px;
+    right: 0;
+    line-height: 10%;
+    left: 0px;
+    width: 500px;
+    height: 350px;
+}
+.contentMatch, .protoOptions
+{
+    display: inline-block;
+    margin: auto;
+}
+:required {
+    background: red;
+}
+.ruleOutput
+{
+    position: relative;
+    margin: auto;
+    top: 0px;
+    right: 0;
+    line-height: 10%;
+    left: 0;
+    width: 1005px;
+    height: 100px;
+}
+.submit {
+    position: absolute;
+    padding: 3px 15px;
+    margin: auto;
+    border-radius: 10px;
+    font-family: 'Helvetica', cursive;
+    font-size: 15px;
+    color: #FFF;
+    left:46%;
+    top: 73%;
+    text-decoration: none;  
+    background-color: #3498DB;
+    border-bottom: 5px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+    /* Animation */
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+.submit:hover, 
+.submit:focus {
+    text-decoration: none;
+    color: #fff;
+}
+.submit:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+
+.item {
+  overflow: visible;
+}
+.item img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.item:hover img {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.tcpinputs {
+    width: 46%;
+}
