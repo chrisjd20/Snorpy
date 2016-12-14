@@ -1,5 +1,5 @@
 # Snorpy
-Snorpy is a simple Snort rule creator / builder / maker made originally with python but I made the most recent version with Node. 
+Snorpy is a simple Snort rule creator / builder / maker made originally with python but I made the most recent version with Node and jquery. 
 
 This sample can be seen at snorpy.com
 
