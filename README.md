@@ -3,6 +3,12 @@ Snorpy is a simple Snort rule creator / builder / maker made originally with pyt
 
 This sample can be seen at <a href="http://snorpy.com">Snorpy.com</a>
 
-The install, simply download this repo. Unzip the node-modules. Then from command line run app.js with "node app.js" etc...
+
+#Install
+1. Install nodejs
+2. Download repo
+3. Unzip the file name node_modules.zip
+4. cd /to/the/path/of/app.js
+5. run "node app.js"
 
 Should be that easy.
