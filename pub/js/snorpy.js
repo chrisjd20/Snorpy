@@ -50,6 +50,8 @@ $('body').on('change', '#protoForm', function(){
         $("#srcport").fadeTo(100, 1);
         $("#dstport").fadeTo(100, 1);
         $("#tcp").fadeIn(400);
+        $("#opsrcport").css('display', 'inline-block');
+        $("#opdstport").css('display', 'inline-block');
         $("#opudp").css('display', 'none');
         $("#opip").css('display', 'none');
         $("#opimcp").css('display', 'none');
@@ -63,6 +65,8 @@ $('body').on('change', '#protoForm', function(){
         $("#srcport").fadeTo(100, 1);
         $("#dstport").fadeTo(100, 1);
         $("#udp").fadeIn(400);
+        $("#opsrcport").css('display', 'inline-block');
+        $("#opdstport").css('display', 'inline-block');
         $("#opudp").css('display', 'inline-block');
         $("#opip").css('display', 'none');
         $("#opimcp").css('display', 'none');
@@ -76,11 +80,15 @@ $('body').on('change', '#protoForm', function(){
         $("#srcport").fadeTo(100, 0.3);
         $("#dstport").fadeTo(100, 0.3);
         $("#icmp").fadeIn(400);
+        $("#opsrcport").css('display', 'none');
+        $("#opdstport").css('display', 'none');
         $("#opudp").css('display', 'none');
         $("#opip").css('display', 'none');
         $("#opimcp").css('display', 'inline-block');
         $("#optcp").css('display', 'none');
     } else if (theval === "ip") {
+        $("#opsrcport").css('display', 'none');
+        $("#opdstport").css('display', 'none');
         $("#opprotocol").text('ip ');
         $(".headerelement").fadeTo(0, 1);
         $(".headerelement").prop('disabled', false);
