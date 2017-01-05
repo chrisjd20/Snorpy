@@ -633,7 +633,7 @@ $("#pcrecheck").click(function(){
 
     var theregex = $("#theregex").val() + '/';
     if ($("#theregex").val() !== "" && $("#oppcre").text() === "") {
-        $("#oppcre").text('pcre:'+not+'"'+finalContent.replace(/\|\|/g," ") + '";'+theoffset+thedepth+ nocase + uri);
+        $("#oppcre").text($("#oppcre").text() + ' pcre:"/' + theregex + renocase + redotal + renewline + rewhitespace + regreedy +  '";');
     } else if ($("#theregex").val() !== "") {
         $("#oppcre").text($("#oppcre").text() + ' pcre:"/' + theregex + renocase + redotal + renewline + rewhitespace + regreedy +  '";');
     } else {
