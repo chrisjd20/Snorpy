@@ -50,12 +50,12 @@ $('body').on('change', '#protoForm', function(){
         $("#srcport").fadeTo(100, 1);
         $("#dstport").fadeTo(100, 1);
         $("#tcp").fadeIn(400);
-        $("#opsrcport").css('display', 'inline-block');
-        $("#opdstport").css('display', 'inline-block');
         $("#opudp").css('display', 'none');
         $("#opip").css('display', 'none');
         $("#opimcp").css('display', 'none');
         $("#optcp").css('display', 'inline-block');
+        $("#opsrcport").css('display', 'inline-block');
+        $("#opdstport").css('display', 'inline-block');
     } else if (theval === "udp") {
         $("#opprotocol").text('udp ');
         $(".headerelement").fadeTo(0, 1);
@@ -65,12 +65,12 @@ $('body').on('change', '#protoForm', function(){
         $("#srcport").fadeTo(100, 1);
         $("#dstport").fadeTo(100, 1);
         $("#udp").fadeIn(400);
-        $("#opsrcport").css('display', 'inline-block');
-        $("#opdstport").css('display', 'inline-block');
         $("#opudp").css('display', 'inline-block');
         $("#opip").css('display', 'none');
         $("#opimcp").css('display', 'none');
         $("#optcp").css('display', 'none');
+        $("#opsrcport").css('display', 'inline-block');
+        $("#opdstport").css('display', 'inline-block');
     } else if (theval === "icmp") {
         $("#opprotocol").text('icmp ');
         $(".headerelement").fadeTo(0, 1);
@@ -80,15 +80,15 @@ $('body').on('change', '#protoForm', function(){
         $("#srcport").fadeTo(100, 0.3);
         $("#dstport").fadeTo(100, 0.3);
         $("#icmp").fadeIn(400);
-        $("#opsrcport").css('display', 'none');
-        $("#opdstport").css('display', 'none');
         $("#opudp").css('display', 'none');
         $("#opip").css('display', 'none');
         $("#opimcp").css('display', 'inline-block');
         $("#optcp").css('display', 'none');
+        $("#opsrcport").css('display', 'inline-block');
+        $("#opdstport").css('display', 'inline-block');
+        $("#opsrcport").text('any');
+        $("#opdstport").text('any');
     } else if (theval === "ip") {
-        $("#opsrcport").css('display', 'none');
-        $("#opdstport").css('display', 'none');
         $("#opprotocol").text('ip ');
         $(".headerelement").fadeTo(0, 1);
         $(".headerelement").prop('disabled', false);
@@ -101,6 +101,11 @@ $('body').on('change', '#protoForm', function(){
         $("#opip").css('display', 'inline-block');
         $("#opimcp").css('display', 'none');
         $("#optcp").css('display', 'none');
+        $("#opsrcport").css('display', 'inline-block');
+        $("#opdstport").css('display', 'inline-block');
+        $("#opsrcport").text('any');
+        $("#opdstport").text('any');
+
     }
 });
 
