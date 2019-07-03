@@ -4,7 +4,15 @@ Snorpy is a simple Snort rule creator / builder / maker made originally with pyt
 This sample can be seen at <a href="http://snorpy.com">Snorpy.com</a>
 
 
-#Install
+# Docker Installation Instructions:
+
+1. Download and install Docker-ce
+2. git clone https://github.com/chrisjd20/Snorpy.git
+3. cd Snorpy
+4. docker build -t snorpy_app .
+5. docker run -p 8080:8080 -it --rm --name snorpy_container snorpy_app
+
+# Install
 1. Install nodejs
 2. Download repo
 3. Unzip the file name node_modules.zip
