@@ -13,8 +13,8 @@ var logging = false;
 //var dbuser = 'root';
 //var dbpass = 'root';
 var SSL = false;                    
-var httpport = 80;
-var httpsport = 443;
+var httpport = 8080;
+var httpsport = 4433;
 
 if (SSL) {
     var privateKey  = fs.readFileSync('./certs/cert-name.key', 'utf8');
