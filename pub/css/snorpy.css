@@ -30,19 +30,15 @@ body {
 #globalcontainer {
     position: relative;
     min-width: 1050px; 
-    top: 50%;
-    transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-2%);
-    -o-transform: translateY(-50%);
+    height: 100%;
+    top: 20px;
 }
 #GlobalResults {
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     display: none;
-    top: 79%;
+    top: -35px;
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
